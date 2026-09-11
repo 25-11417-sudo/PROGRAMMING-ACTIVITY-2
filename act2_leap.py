@@ -1,21 +1,7 @@
-# Name: Rodriguez jeremie G.
+# Name: RODRIGUEZ JEREMIE G.
 # Section: BAET - 2101
-# Task 1 - Change Calculator
+# Task 3 - Leap Year Test
 
-amount = int(input("Enter amount in pesos: "))
+year = int(input("Enter a year: "))
 
-pesos100 = amount // 100
-amount = amount % 100
-
-pesos20 = amount // 20
-amount = amount % 20
-
-pesos5 = amount // 5
-amount = amount % 5
-
-pesos1 = amount // 1
-
-print("100 pesos:", pesos100)
-print("20 pesos:", pesos20)
-print("5 pesos:", pesos5)
-print("1 peso:", pesos1)
+print((year % 4 == 0 and year % 100 != 0) or year % 400 == 0)
