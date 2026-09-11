@@ -1,21 +1,10 @@
-# Name: Rodriguez jeremie G.
+# Name: RODRIGUEZ JEREMIE G.
 # Section: BAET - 2101
-# Task 1 - Change Calculator
+# Task 4 - Temperature Check
 
-amount = int(input("Enter amount in pesos: "))
+celsius = float(input("Enter temperature in °C: "))
 
-pesos100 = amount // 100
-amount = amount % 100
+fahrenheit = celsius * 9 / 5 + 32
 
-pesos20 = amount // 20
-amount = amount % 20
-
-pesos5 = amount // 5
-amount = amount % 5
-
-pesos1 = amount // 1
-
-print("100 pesos:", pesos100)
-print("20 pesos:", pesos20)
-print("5 pesos:", pesos5)
-print("1 peso:", pesos1)
+print("Fahrenheit:", fahrenheit)
+print("Between 20 and 30 °C:", 20 <= celsius <= 30)
